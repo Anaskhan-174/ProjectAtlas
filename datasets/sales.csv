@@ -1,0 +1,11 @@
+OrderID,Customer,Product,Quantity,Price,City
+1001,Anas,Laptop,2,55000,Delhi
+1002,Rahul,Mouse,5,700,Mumbai
+1003,Ali,Keyboard,3,1500,Lucknow
+1004,Sara,Monitor,1,12000,Pune
+1005,John,Headphones,4,2500,Bangalore
+1006,Priya,Laptop,1,60000,Delhi
+1007,Aman,Mouse,6,750,Jaipur
+1008,Zara,Keyboard,2,1800,Hyderabad
+1009,David,Monitor,2,13000,Chennai
+1010,Rohan,Headphones,3,2700,Kolkata
