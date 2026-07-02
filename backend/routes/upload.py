@@ -1,5 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
 from services.analyzer import analyze_dataframe
+from services.cleaner import clean_dataframe
 import pandas as pd
 import os
 
@@ -28,6 +29,17 @@ async def upload_file(file: UploadFile = File(...)):
             "error": "Only CSV and Excel files are allowed."
         }
 
-    report = analyze_dataframe(df)
+    # Analyze original data
+    analysis_report = analyze_dataframe(df)
 
-    return report
+    # Clean data
+    cleaned_df, cleaning_report = clean_dataframe(df)
+
+    # Analyze cleaned data
+    cleaned_analysis = analyze_dataframe(cleaned_df)
+
+    return {
+        "original_analysis": analysis_report,
+        "cleaning_report": cleaning_report,
+        "cleaned_analysis": cleaned_analysis
+    }
