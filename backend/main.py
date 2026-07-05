@@ -3,8 +3,14 @@ from routes.upload import router
 
 app = FastAPI()
 
+# Register Upload APIs
 app.include_router(router)
 
+# Register Dashboard APIs
+app.include_router(router)
+
+
+# Home Route
 @app.get("/")
 def home():
     return {

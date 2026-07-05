@@ -1,13 +1,44 @@
-venv/
-
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-uploads/
-reports/
+# Virtual Environment
+venv/
+.venv/
 
+# Environment Variables
+.env
+.env.local
+
+# IDE
 .vscode/
-
 .idea/
 
-.env
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Uploaded Files
+uploads/
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Secrets
+config.py
+secrets.py
+apikey.txt
+keys.json
+
+# Test Cache
+.pytest_cache/
+
+# Build
+dist/
+build/

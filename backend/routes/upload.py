@@ -1,6 +1,9 @@
 from fastapi import APIRouter, UploadFile, File
 from services.analyzer import analyze_dataframe
 from services.cleaner import clean_dataframe
+from services.visualizer import generate_bar_chart
+from services.summarizer import generate_summary
+from services.dashboard_service import generate_dashboard
 import pandas as pd
 import os
 
@@ -38,7 +41,18 @@ async def upload_file(file: UploadFile = File(...)):
     # Analyze cleaned data
     cleaned_analysis = analyze_dataframe(cleaned_df)
 
+    # visualize   data in bar chart
+    dashboard = generate_dashboard(cleaned_df)
+
+    # for summry like output
+    summary = generate_summary(
+        cleaned_analysis,
+        cleaning_report
+    )
+
     return {
+        "dashboard": dashboard,
+        "summary": summary,
         "original_analysis": analysis_report,
         "cleaning_report": cleaning_report,
         "cleaned_analysis": cleaned_analysis
