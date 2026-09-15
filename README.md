@@ -1,27 +1,28 @@
 # 🚀 Project Atlas
 
-## AI-Powered Decision Intelligence Platform
+## AI-Powered Decision Intelligence Platform — In Development
 
-**Project Atlas** is an analytics-focused platform being developed to simplify the early stages of data analysis. The goal is to let users upload raw datasets and progressively automate **data profiling, cleaning, analysis, business insights, dashboards, and reporting**.
+**Project Atlas** is a data analytics platform I am currently building to reduce repetitive steps in the data-analysis workflow. The long-term goal is to take users from **raw datasets to business-ready insights and decisions** through an increasingly automated workflow.
 
-> 🚧 **Status:** In active development
+> 🚧 **Status:** Work in Progress — actively being built
 
-## 🎯 Problem
+## 🎯 Why I Started Building Project Atlas
 
-A typical analytics workflow can involve repetitive steps such as inspecting columns, identifying missing values, cleaning inconsistent data, and preparing datasets before meaningful analysis can begin.
+A typical analytics workflow can involve repetitive work such as inspecting columns, identifying missing values, cleaning inconsistent data, and preparing datasets before meaningful analysis can begin.
 
-Project Atlas is being built to reduce this manual effort and create a more streamlined path from **raw data to business-ready insights**.
+I started Project Atlas to explore how these steps can be automated into one practical analytics workflow instead of building it as a finished product from the beginning.
 
-## ✨ Current Features
+## ✨ What Is Built So Far
 
-- ✅ Upload **CSV and Excel** datasets
+- ✅ CSV and Excel dataset upload
 - ✅ Automatic data profiling
-- ✅ Automatic data cleaning
-- 🚧 AI-assisted business insights
-- 🚧 Interactive dashboard generation
-- 🚧 Automated PDF reporting
+- ✅ Automatic data cleaning service
+- 🚧 Automated data-quality checks — expanding
+- 🚧 Business insight generation — in development
+- 🚧 Interactive analytics dashboard — planned
+- 🚧 Automated reporting — planned
 
-## 🔄 Planned Workflow
+## 🔄 Target Workflow
 
 ```text
 CSV / Excel Upload
@@ -32,12 +33,14 @@ Automatic Data Cleaning
         ↓
 Data Analysis
         ↓
-AI Business Insights
+Business Insights
         ↓
 Interactive Dashboard
         ↓
 Reports & Recommendations
 ```
+
+The workflow above represents the **target direction of the project**, not a claim that every stage is already complete.
 
 ## 🛠️ Tech Stack
 
@@ -49,9 +52,9 @@ Reports & Recommendations
 
 ## 📌 Project Focus
 
-Project Atlas is intended to help users move from **raw datasets to understandable business decisions** without requiring every preparation step to be performed manually.
+Project Atlas is being developed around a practical data-analytics use case: reducing manual preparation work and eventually helping users move from **raw data → analysis → business decisions**.
 
-The project is being developed with a practical analytics workflow in mind rather than as a generic AI application.
+The project is intentionally being built step by step, with working analytics and automation features added progressively.
 
 ## 🗺️ Roadmap
 
@@ -61,7 +64,7 @@ The project is being developed with a practical analytics workflow in mind rathe
 - [ ] Expand automated data-quality checks
 - [ ] Business insight generation
 - [ ] Interactive analytics dashboard
-- [ ] Automated PDF reports
+- [ ] Automated PDF reporting
 - [ ] End-to-end decision intelligence workflow
 
 ## 📁 Repository Structure
